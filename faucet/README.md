@@ -5,8 +5,7 @@
 
 **Примеры конфигураций**
 
-Путь: configs/project/settings.py
-
+Путь: configs/project/settings.py</br>
 **Файл локальных настроек проекта**
 ```
 from .development import * 
@@ -24,8 +23,7 @@ DATABASES = {
 } 
 ```
 
-Путь: configs/project/faucet/private_key.py
-
-Путь: configs/project/faucet/test_tokens.py
+Путь: configs/project/faucet/private_key.py</br>
+Путь: configs/project/faucet/test_tokens.py</br>
 Аналогичны файлам из папки faucet/configs/ из [репозитория faucet'а](https://github.com/u-transnet/utschool-faucet)
 
