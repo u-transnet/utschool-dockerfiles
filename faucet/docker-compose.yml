@@ -1,0 +1,23 @@
+version: '2'
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "80:8000"
+    volumes:
+      - ./config/nginx.conf:/etc/nginx/conf.d/nginx.conf
+    depends_on:
+      - web
+  web:
+    build: .
+    container_name: utschool-faucet
+    command: bash -c "python manage.py makemigrations && python manage.py migrate && gunicorn utschoolfaucet.wsgi:application -b 0.0.0.0:8080"
+    depends_on:
+      - db
+    expose:
+      - "8080"
+
+  db:
+    image: postgres:latest
+    container_name: postgres
