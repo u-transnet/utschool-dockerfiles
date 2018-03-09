@@ -29,6 +29,9 @@ DATABASES = {
 Путь: configs/project/faucet/test_tokens.py</br>
 Аналогичны файлам из папки faucet/configs/ из [репозитория faucet'а](https://github.com/u-transnet/utschool-faucet)
 
+Путь: configs/nginx.conf
+Конфигурация nginx сервера, который запускается как часть минимально необходимой среды окружения 
+
 # Запуск и управление
 ```
 docker-compose up # Запуск
