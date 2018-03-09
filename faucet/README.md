@@ -6,6 +6,7 @@
 **Примеры конфигураций**
 
 Путь: configs/project/settings.py
+
 **Файл локальных настроек проекта**
 ```
 from .development import * 
