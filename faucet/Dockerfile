@@ -9,4 +9,4 @@ RUN pip install gunicorn
 RUN pip install psycopg2
 WORKDIR /src
 RUN python3 create_pip_requirements.py
-RUN pip install -r requirements.pip
+RUN pip install -r requirements.txt
